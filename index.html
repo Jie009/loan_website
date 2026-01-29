@@ -223,106 +223,111 @@
       </section>
 
       <section id="apply" class="section">
-        <div class="container form-container">
-          <h2>免费申请表</h2>
-          <p>填写基本资料，我们会在最短时间内联系您。</p>
-          <form
-            class="apply-form"
-            id="contact"
-            action="#"
-            method="post"
-            data-endpoint="https://script.google.com/macros/s/AKfycbyv_9VQB7XqIk-6kWB_Zp1gwoIs-jQEUT2htxpNsRbL9F6HYiuyE3pmsQqsEHul-DW1/exec"
-          >
-            <input
-              type="text"
-              name="website"
-              class="hp-field"
-              autocomplete="off"
-              tabindex="-1"
-              aria-hidden="true"
-            />
-            <label>
-              名字
+        <div class="container apply-grid">
+          <div class="apply-form-panel">
+            <h2>免费申请表</h2>
+            <p>填写基本资料，我们会在最短时间内联系您。</p>
+            <form
+              class="apply-form"
+              id="contact"
+              action="#"
+              method="post"
+              data-endpoint="https://script.google.com/macros/s/AKfycbyv_9VQB7XqIk-6kWB_Zp1gwoIs-jQEUT2htxpNsRbL9F6HYiuyE3pmsQqsEHul-DW1/exec"
+            >
               <input
                 type="text"
-                name="name"
-                placeholder="请输入姓名"
-                maxlength="50"
-                required
+                name="website"
+                class="hp-field"
+                autocomplete="off"
+                tabindex="-1"
+                aria-hidden="true"
               />
-            </label>
-            <label>
-              联系号码
-              <input
-                type="tel"
-                name="phone"
-                placeholder="例如 012-3456789"
-                pattern="^01\d-?\d{8,9}$"
-                title="格式：01X-XXXXXXXX 或 01XXXXXXXXX"
-                required
-              />
-            </label>
-            <label>
-              地区（州/城市）
-              <select name="region" required>
-                <option value="" disabled selected>请选择州属</option>
-                <option value="Johor">Johor</option>
-                <option value="Kedah">Kedah</option>
-                <option value="Kelantan">Kelantan</option>
-                <option value="Melaka">Melaka</option>
-                <option value="Negeri Sembilan">Negeri Sembilan</option>
-                <option value="Pahang">Pahang</option>
-                <option value="Perak">Perak</option>
-                <option value="Perlis">Perlis</option>
-                <option value="Pulau Pinang">Pulau Pinang</option>
-                <option value="Sabah">Sabah</option>
-                <option value="Sarawak">Sarawak</option>
-                <option value="Selangor">Selangor</option>
-                <option value="Terengganu">Terengganu</option>
-                <option value="Kuala Lumpur">Kuala Lumpur</option>
-                <option value="Putrajaya">Putrajaya</option>
-                <option value="Labuan">Labuan</option>
-              </select>
-            </label>
-            <label>
-              每月净收入（RM）
-              <input
-                type="number"
-                name="income"
-                placeholder="例如 3500"
-                min="0"
-                max="1000000"
-                required
-              />
-            </label>
-            <label>
-              贷款数额（RM）
-              <input
-                type="number"
-                name="amount"
-                placeholder="例如 20000"
-                min="0"
-                max="10000000"
-                required
-              />
-            </label>
-            <button class="btn primary" type="submit">提交申请</button>
-            <div
-              class="cf-turnstile"
-              data-sitekey="0x4AAAAAACVAeCbrrJ0xY4F9"
-            ></div>
-            <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
-          <dialog class="success-dialog" id="successDialog">
-            <div class="dialog-content">
-              <h3>提交成功</h3>
-              <p>将会在短时间内联络你。</p>
-              <button class="btn primary" type="button" id="closeDialog">
-                关闭
-              </button>
-            </div>
-          </dialog>
-          <p class="note">我们重视隐私，仅用于联系与评估，不会公开分享。</p>
+              <label>
+                名字
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="请输入姓名"
+                  maxlength="50"
+                  required
+                />
+              </label>
+              <label>
+                联系号码
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="例如 012-3456789"
+                  pattern="^01\d-?\d{8,9}$"
+                  title="格式：01X-XXXXXXXX 或 01XXXXXXXXX"
+                  required
+                />
+              </label>
+              <label>
+                地区（州/城市）
+                <select name="region" required>
+                  <option value="" disabled selected>请选择州属</option>
+                  <option value="Johor">Johor</option>
+                  <option value="Kedah">Kedah</option>
+                  <option value="Kelantan">Kelantan</option>
+                  <option value="Melaka">Melaka</option>
+                  <option value="Negeri Sembilan">Negeri Sembilan</option>
+                  <option value="Pahang">Pahang</option>
+                  <option value="Perak">Perak</option>
+                  <option value="Perlis">Perlis</option>
+                  <option value="Pulau Pinang">Pulau Pinang</option>
+                  <option value="Sabah">Sabah</option>
+                  <option value="Sarawak">Sarawak</option>
+                  <option value="Selangor">Selangor</option>
+                  <option value="Terengganu">Terengganu</option>
+                  <option value="Kuala Lumpur">Kuala Lumpur</option>
+                  <option value="Putrajaya">Putrajaya</option>
+                  <option value="Labuan">Labuan</option>
+                </select>
+              </label>
+              <label>
+                每月净收入（RM）
+                <input
+                  type="number"
+                  name="income"
+                  placeholder="例如 3500"
+                  min="0"
+                  max="1000000"
+                  required
+                />
+              </label>
+              <label>
+                贷款数额（RM）
+                <input
+                  type="number"
+                  name="amount"
+                  placeholder="例如 20000"
+                  min="0"
+                  max="10000000"
+                  required
+                />
+              </label>
+              <button class="btn primary" type="submit">提交申请</button>
+              <div
+                class="cf-turnstile"
+                data-sitekey="0x4AAAAAACVAeCbrrJ0xY4F9"
+              ></div>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <dialog class="success-dialog" id="successDialog">
+              <div class="dialog-content">
+                <h3>提交成功</h3>
+                <p>将会在短时间内联络你。</p>
+                <button class="btn primary" type="button" id="closeDialog">
+                  关闭
+                </button>
+              </div>
+            </dialog>
+            <p class="note">我们重视隐私，仅用于联系与评估，不会公开分享。</p>
+          </div>
+          <div class="apply-media" aria-hidden="true">
+            <img src="images/cooperate_2.png" alt="" class="apply-image" />
+          </div>
         </div>
       </section>
     </main>
